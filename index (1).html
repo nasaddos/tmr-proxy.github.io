@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Share Free Proxy" />
+  <meta name="keywords" content="tmrvirus, proxy, free proxy, website proxy, tmr proxy, proxy list, web proxy, online proxy, socks5, socks4, http proxy, anonymous proxy, code, programming, coding, developer, web development, software development, programming language, tech, technology, internet, online tools, network security, cybersecurity, data privacy, data protection, online privacy, internet security, computer science, IT, information technology, software engineering, coding tutorials, coding resources, programming tutorials, programming resources, programming tools, coding community, coding forums, coding discussions, code examples, coding challenges, coding competitions, coding bootcamp, coding academy, coding school, coding courses, coding classes, learn to code, coding skills, programming skills, software development tools, web development tools, programming languages, coding languages">
+  <title>TMR VIRUS | WEBSITE FREE PROXY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://files.catbox.moe/n9xw5v.png">
+  <link rel="stylesheet" href="tmr_virus.css">
+  <meta property="og:image" content="https://files.catbox.moe/vad6pr.png">
+  <style>
+    .instruction-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ff652f;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .instruction-container i.fas {
+      color: #ff652f;
+      margin-right: 5px;
+    }
+
+    .instruction-title {
+      color: #ff652f;
+      font-weight: bold;
+      font-size: 18px;
+      animation: colorChange 3s infinite alternate;
+    }
+
+    .instruction-line {
+      color: #333;
+      font-size: 16px;
+      margin-left: 10px;
+      margin-top: 5px;
+      animation: colorChange 3s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #ff652f;
+      }
+      50% {
+        color: #00adb5;
+      }
+      100% {
+        color: #ff652f;
+      }
+    }
+
+    .instruction-title::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background-color: #ff652f;
+      margin-right: 5px;
+      animation: borderChange 3s infinite alternate;
+    }
+
+    @keyframes borderChange {
+      0% {
+        background-color: #ff652f;
+      }
+      50% {
+        background-color: #00adb5;
+      }
+      100% {
+        background-color: #ff652f;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="dropdown">
+      <div class="instruction-container">
+        <div>
+          <i class="fas fa-info-circle"> Hướng Dẫn</i>
+          <div class="instruction-line">- Chọn kiểu giao thức proxy, Http/Socks4/Socks5</div>
+          <div class="instruction-line">- Sau đó chờ vài giây để hệ thống trích xuất dữ liệu và hiển thị lên kết quả.</div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="dropdown">
+        <select id="proxyType">
+          <option value="" disabled selected>Vui Lòng Chọn:</option>
+          <option value="http">HTTP</option>
+          <option value="socks4">SOCKS4</option>
+          <option value="socks5">SOCKS5</option>
+        </select>
+      </div>
+      <div class="proxy-list-container">
+        <ul class="proxy-list" id="proxyList"></ul>
+      </div>
+      <div class="button-container">
+        <button class="button copy-button" onclick="copyProxies()"><i class="far fa-copy"></i></button>
+        <button class="button save-button" onclick="saveProxies()"><i class="fas fa-download"></i></button>
+        <button class="button delete-button" onclick="deleteAllProxies()"><i class="far fa-trash-alt"></i></button>
+      </div>
+      <div class="info">
+        Số Lượng Proxy: <span class="proxy-count" id="proxyCount">4669</span>
+      </div>
+    </div>
+  </div>
+  <script src="tmr_virus.js"></script>
+</body>
+</html>
